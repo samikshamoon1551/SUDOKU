@@ -10,6 +10,8 @@ def userinput():
    
    
    #User should no be able to modify clue cells...Thus accept only empty cell values:
+    
+    
     if ((r==0 and c==0) or (r==0 and c==1) or (r==0 and c==4) or (r==1and c==0) or (r==1 and c==3) or (r==1 and c==4)or (r==1 and c==5) or (r==2 and c==1) or (r==2 and c==2) or (r==2 and c==7)or (r==3 and c==0) or (r==3 and c==4) or (r==3 and c==8)or (r==4 and c==0) or (r==4 and c==3) or (r==4 and c==5) or (r==4 and c==8)or (r==5 and c==0)or (r==5 and c==4)or (r==5 and c==8) or (r==6 and c==1) or (r==6 and c==6) or (r==6 and c==7)or (r==7 and c==3) or (r==7 and c==4)or (r==7 and c==5)or (r==7 and c==8)or (r==8 and c==4) or (r==8 and c==7) or (r==8 and c==8)):
         print("Invalid! Enter Empty cell parameters ")
         userinput()   #GO back to take userinput for row and column
