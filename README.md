@@ -23,6 +23,8 @@ def userinput():
 #To check repeatition in row:
 
 
+
+
 def checkrow(r,c,e):
     count1=0
     for x in range(9):
@@ -33,6 +35,10 @@ def checkrow(r,c,e):
     if count1>0:
         checkcol(r,c,e)
 #To check repeatition in column:
+
+
+
+
 def checkcol(r,c,e):
     count2=0
     for y in range(9):
@@ -56,7 +62,11 @@ def checkblock(r,c,e):
                 if grid[x][y]==e:
                    print("Invalid! Reapeation in Block1!!!")
                    count3+=1
-                   userinput()    #Again take userinput
+                   userinput()  
+ 
+ 
+ 
+ #Again take userinput
 
        elif c==3 or c==4 or c==5:
           for x in range(0, 3, 1):
@@ -71,7 +81,13 @@ def checkblock(r,c,e):
                   if grid[x][y] == e:
                       print("Invalid! Reapeation in Block3!!!")
                       count3 = count3 + 1
-                      userinput()    #Again take userinput
+                      userinput()    
+   
+   
+   #Again take userinput
+       
+       
+       
        if count3==0:
            execute(r,c,e)    #If the userentry(or the userinput) does not repeat in corresponding Row, Column or 3 X 3 Block, Print the modified grid:
        else:
@@ -98,10 +114,18 @@ def checkblock(r,c,e):
                     if grid[x][y] == e:
                         print("Invalid! Reapeation in Block6!!!")
                         count3 = count3 + 1
-                        userinput()    #Again take userinput
+                        userinput()    
+                        
+   #Again take userinput
+        
+        
+        
         if count3 == 0:
-            execute(r,c,e)   #If the userentry(or the userinput) does not repeat in corresponding Row, Column or 3 X 3 Block, Print the modified grid:
-        else:
+            execute(r,c,e)  
+    #If the userentry(or the userinput) does not repeat in corresponding Row, Column or 3 X 3 Block, Print the modified grid:
+       
+       
+       else:
             userinput()
     elif r==6 or r==7 or r==8:
         if c == 0 or c==1 or c==2:
@@ -124,7 +148,10 @@ def checkblock(r,c,e):
                     if grid[x][y] == e:
                         print("Invalid! Reapeation in Block9!!!")
                         count3 = count3 + 1
-                        userinput()    #Again take userinput
+                        userinput()   
+  #Again take userinput
+        
+        
         if count3 == 0:
             execute(r,c,e)  #If the userentry(or the userinput) does not repeat in corresponding Row, Column or 3 X 3 Block, Print the modified grid:
         else:
@@ -155,7 +182,13 @@ stdgrid=[[5,3,4,6,7,8,9,1,2],[6,7,2,1,9,5,3,4,8],[1,9,8,3,4,2,5,6,7],[8,5,9,7,6,
 grid=[[5,3,"_","_",7,"_","_","_","_"],[6,"_","_",1,9,5,"_","_","_"],["_",9,8,"_","_","_","_",6,"_"],[8,"_","_","_",6,"_","_","_",3],[4,"_","_",8,"_",3,"_","_",1],[7,"_","_","_",2,"_","_","_",6],["_",6,"_","_","_","_",2,8,"_"],["_","_","_",4,1,9,"_","_",5],["_","_","_","_",8,"_","_",7,9]]
 
 for i in range(9):
-    for j in range(9):
+   
+   for j in range(9):
+        
         print("|",grid[i][j],"|",end="")
+    
     print()
-userinput()      #Go to userinput() function
+
+userinput()      
+
+#Go to userinput() function
